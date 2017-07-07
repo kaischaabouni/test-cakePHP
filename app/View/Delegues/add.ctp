@@ -1,7 +1,7 @@
 <div class="delegues form">
 <?php echo $this->Form->create('Delegue'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Delegue'); ?></legend>
+		<legend><?php echo __('Add Delegue') ; ?></legend>
 	<?php
 		echo $this->Form->input('nom');
 		echo $this->Form->input('prenom');
