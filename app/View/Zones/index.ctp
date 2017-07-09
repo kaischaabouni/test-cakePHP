@@ -10,7 +10,7 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="x_content">	
-					<?php echo $this->Html->link(__('New Zone'), array('action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>>
+					<?php echo $this->Html->link(__('New Zone'), array('action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
 					<?php echo $this->Html->link(__('List Villes'), array('controller' => 'villes', 'action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
 					<?php echo $this->Html->link(__('New Ville'), array('controller' => 'villes', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
 					<?php echo $this->Html->link(__('List Delegues'), array('controller' => 'delegues', 'action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
