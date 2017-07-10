@@ -3,66 +3,47 @@
         <h3>General</h3>
         <ul class="nav side-menu">
             <li>
-                <a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                <a href="<?php echo $this->webroot;?>"><i class="fa fa-home"></i> Home </a>
+            </li>
+            <li>
+                <a><i class="fa fa-edit"></i> Délégués <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/index.html">Dashboard</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/index2.html">Dashboard2</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/index3.html">Dashboard3</a></li>
+                    <li><a href="<?php echo $this->webroot;?>delegues/">Liste des délégues</a></li>
+                    <li><a href="<?php echo $this->webroot;?>delegues/add/">Ajouter un nouveau délégué</a></li>
                 </ul>
             </li>
             <li>
-                <a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                <a><i class="fa fa-edit"></i> Laboratoires <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/form.html">General Form</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/form_advanced.html">Advanced Components</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/form_validation.html">Form Validation</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/form_wizards.html">Form Wizard</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/form_upload.html">Form Upload</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/form_buttons.html">Form Buttons</a></li>
+                    <li><a href="<?php echo $this->webroot;?>laboratoires/">Liste des laboratoires</a></li>
+                    <li><a href="<?php echo $this->webroot;?>laboratoires/add/">Ajouter un nouveau laboratoire</a></li>
                 </ul>
             </li>
             <li>
-                <a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                <a><i class="fa fa-edit"></i> Régions <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/general_elements.html">General Elements</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/media_gallery.html">Media Gallery</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/typography.html">Typography</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/icons.html">Icons</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/glyphicons.html">Glyphicons</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/widgets.html">Widgets</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/invoice.html">Invoice</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/inbox.html">Inbox</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/calendar.html">Calendar</a></li>
+                    <li><a href="<?php echo $this->webroot;?>regions/">Liste des régions</a></li>
+                    <li><a href="<?php echo $this->webroot;?>regions/add/">Ajouter une nouvelle région</a></li>
                 </ul>
             </li>
             <li>
-                <a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                <a><i class="fa fa-edit"></i> Villes <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a tables.html">Tables</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/tables_dynamic.html">Table Dynamic</a></li>
+                    <li><a href="<?php echo $this->webroot;?>villes/">Liste des villes</a></li>
+                    <li><a href="<?php echo $this->webroot;?>villes/add/">Ajouter une nouvelle ville</a></li>
                 </ul>
             </li>
             <li>
-                <a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                <a><i class="fa fa-edit"></i> Zones <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/chartjs.html">Chart JS</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/chartjs2.html">Chart JS2</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/morisjs.html">Moris JS</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/echarts.html">ECharts</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/other_charts.html">Other Charts</a></li>
-                </ul>
-            </li>
-            <li>
-                <a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
-                <ul class="nav child_menu">
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/fixed_sidebar.html">Fixed Sidebar</a></li>
-                    <li><a href="<?php echo $this->webroot;?>app/webroot/production/fixed_footer.html">Fixed Footer</a></li>
+                    <li><a href="<?php echo $this->webroot;?>zones/">Liste des zones</a></li>
+                    <li><a href="<?php echo $this->webroot;?>zones/add/">Ajouter une nouvelle zone</a></li>
                 </ul>
             </li>
         </ul>
     </div>
     <div class="menu_section">
-        <h3>Live On</h3>
+        <h3>Paramètres</h3>
         <ul class="nav side-menu">
             <li>
                 <a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
