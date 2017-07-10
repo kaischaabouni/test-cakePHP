@@ -94,8 +94,9 @@
 					</tbody>
 				</table>
 				<?php endif; ?>
-
-				<?php echo $this->Html->link(__('New Laboratoire'), array('controller' => 'laboratoires', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<?php echo $this->Html->link(__('New Laboratoire'), array('controller' => 'laboratoires', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
+				</div>
 			</div>
 		</div>
 
@@ -132,8 +133,9 @@
 					</tbody>
 				</table>
 				<?php endif; ?>
-
-				<?php echo $this->Html->link(__('New Zone'), array('controller' => 'zones', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<?php echo $this->Html->link(__('New Zone'), array('controller' => 'zones', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
+				</div>
 			</div>
 		</div>
 

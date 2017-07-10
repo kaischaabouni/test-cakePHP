@@ -71,7 +71,9 @@
 					</tbody>
 				</table>
 				<?php endif; ?>
-				<?php echo $this->Html->link(__('New Ville'), array('controller' => 'villes', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<?php echo $this->Html->link(__('New Ville'), array('controller' => 'villes', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
+				</div>
 			</div>
 		</div>
 	</div>
