@@ -1,22 +1,6 @@
 <div class="">
-
 	<div class="row">
-	
-	
-		<div class="col-md-3 col-sm-3 col-xs-12">
-			<div class="x_panel">
-				<div class="x_title">
-					<h2><?php echo __('Actions'); ?></h2>
-					<div class="clearfix"></div>
-				</div>
-				<div class="x_content">	
-					<?php echo $this->Html->link(__('New Region'), array('action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('List Villes'), array('controller' => 'villes', 'action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('New Ville'), array('controller' => 'villes', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-9 col-sm-9 col-xs-12">
+		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div class="x_panel">
 				<div class="x_title">
 					<h2><?php echo __('Regions'); ?></h2>

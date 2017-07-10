@@ -1,27 +1,6 @@
 <div class="">
 	<div class="row">
-		<div class="col-md-3 col-sm-3 col-xs-12">
-			<div class="x_panel">
-				<div class="x_title">
-					<h2><?php echo __('Actions'); ?></h2>
-					<div class="clearfix"></div>
-				</div>
-				<div class="x_content">	
-					<?php echo $this->Html->link(__('Edit Ville'), array('action' => 'edit', $ville['Ville']['id']), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Form->postLink(__('Delete Ville'), array('action' => 'delete', $ville['Ville']['id']), array('class' => 'btn btn-default btn-block'), __('Are you sure you want to delete # %s?', $ville['Ville']['id'])); ?>
-					<?php echo $this->Html->link(__('List Villes'), array('action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('New Ville'), array('action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('List Regions'), array('controller' => 'regions', 'action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('New Region'), array('controller' => 'regions', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('List Delegues'), array('controller' => 'delegues', 'action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('New Delegue'), array('controller' => 'delegues', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('List Zones'), array('controller' => 'zones', 'action' => 'index'), array('class' => 'btn btn-default btn-block')); ?>
-					<?php echo $this->Html->link(__('New Zone'), array('controller' => 'zones', 'action' => 'add'), array('class' => 'btn btn-default btn-block')); ?>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-9 col-sm-9 col-xs-12">
+		<div class="col-md-12 col-sm-12 col-xs-12">
 			<div class="x_panel">
 				<div class="x_title">
 					<h2><?php  echo __('Ville'); ?></h2>

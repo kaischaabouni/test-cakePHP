@@ -20,7 +20,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<!-- Meta, title, CSS, favicons, etc. -->
@@ -45,7 +45,7 @@
 				<div class="col-md-3 left_col">
 					<div class="left_col scroll-view">
 						<div class="navbar nav_title" style="border: 0;">
-							<a href="<?php echo $this->webroot;?>app/webroot/production/index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+							<a href="<?php echo $this->webroot;?>" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
 						</div>
 						<div class="clearfix"></div>
 						<!-- menu profile quick info -->
