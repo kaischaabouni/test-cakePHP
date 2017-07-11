@@ -26,7 +26,7 @@
 						<thead>
 							<tr>
 								<th><?php echo $this->Paginator->sort('id'); ?></th>
-								<th><?php echo $this->Paginator->sort('nom_region'); ?></th>
+								<th><?php echo $this->Paginator->sort('name'); ?></th>
 								<th class="actions"><?php echo __('Actions'); ?></th>
 							</tr>
 						</thead>
@@ -34,7 +34,7 @@
 							<?php foreach ($regions as $region): ?>
 							<tr>
 								<td><?php echo h($region['Region']['id']); ?>&nbsp;</td>
-								<td><?php echo h($region['Region']['nom_region']); ?>&nbsp;</td>
+								<td><?php echo h($region['Region']['name']); ?>&nbsp;</td>
 								<td class="actions">
 									<?php echo $this->Html->link(__('View'), array('action' => 'view', $region['Region']['id']), array('class' => 'btn btn-default btn-xs')); ?>
 									<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $region['Region']['id']), array('class' => 'btn btn-default btn-xs')); ?>

@@ -26,7 +26,7 @@
 						<thead>
 							<tr>
 								<th><?php echo $this->Paginator->sort('id'); ?></th>
-								<th><?php echo $this->Paginator->sort('nom'); ?></th>
+								<th><?php echo $this->Paginator->sort('name'); ?></th>
 								<th><?php echo $this->Paginator->sort('adresse'); ?></th>
 								<th><?php echo $this->Paginator->sort('mail'); ?></th>
 								<th><?php echo $this->Paginator->sort('responsable'); ?></th>
@@ -37,7 +37,7 @@
 						<?php foreach ($laboratoires as $laboratoire): ?>
 							<tr>
 								<td><?php echo h($laboratoire['Laboratoire']['id']); ?>&nbsp;</td>
-								<td><?php echo h($laboratoire['Laboratoire']['nom']); ?>&nbsp;</td>
+								<td><?php echo h($laboratoire['Laboratoire']['name']); ?>&nbsp;</td>
 								<td><?php echo h($laboratoire['Laboratoire']['adresse']); ?>&nbsp;</td>
 								<td><?php echo h($laboratoire['Laboratoire']['mail']); ?>&nbsp;</td>
 								<td><?php echo h($laboratoire['Laboratoire']['responsable']); ?>&nbsp;</td>

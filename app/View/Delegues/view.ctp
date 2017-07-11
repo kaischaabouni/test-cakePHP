@@ -15,7 +15,7 @@
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Nom'); ?></strong></td>
-							<td><?php echo h($delegue['Delegue']['nom']); ?> </td>
+							<td><?php echo h($delegue['Delegue']['name']); ?> </td>
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Prenom'); ?></strong></td>
@@ -59,7 +59,7 @@
 					<?php $i = 0; foreach ($delegue['Laboratoire'] as $laboratoire): ?>
 						<tr>
 							<td><?php echo $laboratoire['id']; ?></td>
-							<td><?php echo $laboratoire['nom']; ?></td>
+							<td><?php echo $laboratoire['name']; ?></td>
 							<td><?php echo $laboratoire['adresse']; ?></td>
 							<td><?php echo $laboratoire['mail']; ?></td>
 							<td><?php echo $laboratoire['responsable']; ?></td>
@@ -100,7 +100,7 @@
 						<tr>
 							<td><?php echo $zone['id']; ?></td>
 							<td><?php echo $zone['ville_id']; ?></td>
-							<td><?php echo $zone['nom_zone']; ?></td>
+							<td><?php echo $zone['name']; ?></td>
 							<td class="actions">
 								<?php echo $this->Html->link(__('View'), array('controller' => 'zones', 'action' => 'view', $zone['id']), array('class' => 'btn btn-default btn-xs')); ?>
 								<?php echo $this->Html->link(__('Edit'), array('controller' => 'zones', 'action' => 'edit', $zone['id']), array('class' => 'btn btn-default btn-xs')); ?>

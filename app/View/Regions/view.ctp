@@ -15,7 +15,7 @@
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Nom Region'); ?></strong></td>
-							<td><?php echo h($region['Region']['nom_region']); ?></td>
+							<td><?php echo h($region['Region']['name']); ?></td>
 						</tr>
 					</table>
 				</div>
@@ -43,7 +43,7 @@
 						<tr>
 							<td><?php echo $ville['id']; ?></td>
 							<td><?php echo $ville['region_id']; ?></td>
-							<td><?php echo $ville['nom_ville']; ?></td>
+							<td><?php echo $ville['name']; ?></td>
 							<td class="actions">
 								<?php echo $this->Html->link(__('View'), array('controller' => 'villes', 'action' => 'view', $ville['id']), array('class' => 'btn btn-default btn-xs')); ?>
 								<?php echo $this->Html->link(__('Edit'), array('controller' => 'villes', 'action' => 'edit', $ville['id']), array('class' => 'btn btn-default btn-xs')); ?>

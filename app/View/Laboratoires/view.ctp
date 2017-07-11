@@ -15,7 +15,7 @@
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Nom'); ?></strong></td>
-							<td><?php echo h($laboratoire['Laboratoire']['nom']); ?></td>
+							<td><?php echo h($laboratoire['Laboratoire']['name']); ?></td>
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Adresse'); ?></strong></td>
@@ -56,7 +56,7 @@
 					<?php $i = 0; foreach ($laboratoire['Delegue'] as $delegue): ?>
 						<tr>
 							<td><?php echo $delegue['id']; ?></td>
-							<td><?php echo $delegue['nom']; ?></td>
+							<td><?php echo $delegue['name']; ?></td>
 							<td><?php echo $delegue['prenom']; ?></td>
 							<td><?php echo $delegue['ville_id']; ?></td>
 							<td><?php echo $delegue['type_voiture']; ?></td>

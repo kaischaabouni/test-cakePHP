@@ -26,9 +26,9 @@
 						<thead>
 							<tr>
 								<th><?php echo $this->Paginator->sort('id'); ?></th>
-								<th><?php echo $this->Paginator->sort('nom'); ?></th>
+								<th><?php echo $this->Paginator->sort('name'); ?></th>
 								<th><?php echo $this->Paginator->sort('prenom'); ?></th>
-								<th><?php echo $this->Paginator->sort('ville_id'); ?></th>
+								<th><?php echo $this->Paginator->sort('name'); ?></th>
 								<th><?php echo $this->Paginator->sort('type_voiture'); ?></th>
 								<th class="actions"><?php echo __('Actions'); ?></th>
 							</tr>
@@ -37,10 +37,10 @@
 							<?php foreach ($delegues as $delegue): ?>
 							<tr>
 								<td><?php echo h($delegue['Delegue']['id']); ?>&nbsp;</td>
-								<td><?php echo h($delegue['Delegue']['nom']); ?>&nbsp;</td>
+								<td><?php echo h($delegue['Delegue']['name']); ?>&nbsp;</td>
 								<td><?php echo h($delegue['Delegue']['prenom']); ?>&nbsp;</td>
 								<td>
-									<?php echo $this->Html->link($delegue['Ville']['id'], array('controller' => 'villes', 'action' => 'view', $delegue['Ville']['id'])); ?>
+									<?php echo $this->Html->link($delegue['Ville']['name'], array('controller' => 'villes', 'action' => 'view', $delegue['Ville']['id'])); ?>
 								</td>
 								<td><?php echo h($delegue['Delegue']['type_voiture']); ?>&nbsp;</td>
 								<td class="actions">

@@ -27,7 +27,7 @@
 							<tr>
 								<th><?php echo $this->Paginator->sort('id'); ?></th>
 								<th><?php echo $this->Paginator->sort('region_id'); ?></th>
-								<th><?php echo $this->Paginator->sort('nom_ville'); ?></th>
+								<th><?php echo $this->Paginator->sort('name'); ?></th>
 								<th class="actions"><?php echo __('Actions'); ?></th>
 							</tr>
 						</thead>
@@ -40,7 +40,7 @@
 								<td>
 									<?php echo $this->Html->link($ville['Region']['id'], array('controller' => 'regions', 'action' => 'view', $ville['Region']['id'])); ?>
 								</td>
-								<td><?php echo h($ville['Ville']['nom_ville']); ?>&nbsp;</td>
+								<td><?php echo h($ville['Ville']['name']); ?>&nbsp;</td>
 								<td class="actions">
 									<?php echo $this->Html->link(__('View'), array('action' => 'view', $ville['Ville']['id']), array('class' => 'btn btn-default btn-xs')); ?>
 									<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $ville['Ville']['id']), array('class' => 'btn btn-default btn-xs')); ?>

@@ -18,7 +18,7 @@
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Nom Zone'); ?></strong></td>
-							<td><?php echo h($zone['Zone']['nom_zone']); ?></td>
+							<td><?php echo h($zone['Zone']['name']); ?></td>
 						</tr>
 					</table>
 				</div>
@@ -47,7 +47,7 @@
 					<?php $i = 0; foreach ($zone['Delegue'] as $delegue): ?>
 						<tr>
 							<td><?php echo $delegue['id']; ?></td>
-							<td><?php echo $delegue['nom']; ?></td>
+							<td><?php echo $delegue['name']; ?></td>
 							<td><?php echo $delegue['prenom']; ?></td>
 							<td><?php echo $delegue['ville_id']; ?></td>
 							<td><?php echo $delegue['type_voiture']; ?></td>
