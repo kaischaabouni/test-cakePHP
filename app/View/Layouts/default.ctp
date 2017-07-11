@@ -18,7 +18,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -36,6 +35,14 @@
 		<link href="<?php echo $this->webroot;?>app/webroot/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<!-- iCheck -->
 		<link href="<?php echo $this->webroot;?>app/webroot/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+		<!-- Datatables -->
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
 		<!-- Custom Theme Style -->
 		<link href="<?php echo $this->webroot;?>app/webroot/build/css/custom.min.css" rel="stylesheet">
 	</head>
@@ -79,7 +86,6 @@
 			</div>
 		</div>
 
-
 		<!-- jQuery -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/jquery/dist/jquery.min.js"></script>
 		<!-- Bootstrap -->
@@ -88,6 +94,13 @@
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/fastclick/lib/fastclick.js"></script>
 		<!-- NProgress -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/nprogress/nprogress.js"></script>
+		<!-- Custom Theme Scripts -->
+		<script src="<?php echo $this->webroot;?>app/webroot/build/js/custom.min.js"></script>
+
+		<!-- iCheck -->
+		<script src="<?php echo $this->webroot;?>app/webroot/vendors/iCheck/icheck.min.js"></script>
+		<!-- Parsley -->
+		<script src="<?php echo $this->webroot;?>app/webroot/vendors/parsleyjs/dist/parsley.min.js"></script>
 
 		<!-- Datatables -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -105,8 +118,7 @@
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/jszip/dist/jszip.min.js"></script>
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/pdfmake/build/pdfmake.min.js"></script>
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/pdfmake/build/vfs_fonts.js"></script>
-		<!-- Custom Theme Scripts -->
-		<script src="<?php echo $this->webroot;?>app/webroot/build/js/custom.min.js"></script>
+
 		<!-- Datatables -->
 		<script>
 		$(document).ready(function() {
