@@ -14,7 +14,7 @@
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Ville'); ?></strong></td>
-							<td><?php echo $this->Html->link($zone['Ville']['id'], array('controller' => 'villes', 'action' => 'view', $zone['Ville']['id'])); ?></td>
+							<td><?php echo $this->Html->link($zone['Ville']['name'], array('controller' => 'villes', 'action' => 'view', $zone['Ville']['id'])); ?></td>
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Nom Zone'); ?></strong></td>

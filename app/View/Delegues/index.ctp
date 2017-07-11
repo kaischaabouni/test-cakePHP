@@ -28,8 +28,8 @@
 								<th><?php echo $this->Paginator->sort('id'); ?></th>
 								<th><?php echo $this->Paginator->sort('name'); ?></th>
 								<th><?php echo $this->Paginator->sort('prenom'); ?></th>
-								<th><?php echo $this->Paginator->sort('name'); ?></th>
-								<th><?php echo $this->Paginator->sort('type_voiture'); ?></th>
+								<th><?php echo $this->Paginator->sort('name', 'Ville'); ?></th>
+								<th><?php echo $this->Paginator->sort('type_voiture', 'Type de voiture'); ?></th>
 								<th class="actions"><?php echo __('Actions'); ?></th>
 							</tr>
 						</thead>

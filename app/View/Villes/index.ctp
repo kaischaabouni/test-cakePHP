@@ -38,7 +38,7 @@
 							<tr>
 								<td><?php echo h($ville['Ville']['id']); ?>&nbsp;</td>
 								<td>
-									<?php echo $this->Html->link($ville['Region']['id'], array('controller' => 'regions', 'action' => 'view', $ville['Region']['id'])); ?>
+									<?php echo $this->Html->link($ville['Region']['name'], array('controller' => 'regions', 'action' => 'view', $ville['Region']['id'])); ?>
 								</td>
 								<td><?php echo h($ville['Ville']['name']); ?>&nbsp;</td>
 								<td class="actions">

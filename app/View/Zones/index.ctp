@@ -37,7 +37,7 @@
 							<tr>
 								<td><?php echo h($zone['Zone']['id']); ?>&nbsp;</td>
 								<td>
-									<?php echo $this->Html->link($zone['Ville']['id'], array('controller' => 'villes', 'action' => 'view', $zone['Ville']['id'])); ?>
+									<?php echo $this->Html->link($zone['Ville']['name'], array('controller' => 'villes', 'action' => 'view', $zone['Ville']['id'])); ?>
 								</td>
 								<td><?php echo h($zone['Zone']['name']); ?>&nbsp;</td>
 								<td class="actions">

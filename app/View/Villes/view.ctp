@@ -15,7 +15,7 @@
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Region'); ?></strong></td>
-							<td><?php echo $this->Html->link($ville['Region']['id'], array('controller' => 'regions', 'action' => 'view', $ville['Region']['id'])); ?></td>
+							<td><?php echo $this->Html->link($ville['Region']['name'], array('controller' => 'regions', 'action' => 'view', $ville['Region']['id'])); ?></td>
 						</tr>
 						<tr>
 							<td><strong><?php echo __('Nom Ville'); ?></strong></td>

@@ -75,7 +75,7 @@
 				<div class="right_col" role="main">
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>	
-				<?php //echo $this->element('sql_dump'); ?>		
+				<?php echo $this->element('sql_dump'); ?>		
 				</div>
 				<!-- /page content -->   			
 
