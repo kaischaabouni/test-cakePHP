@@ -36,6 +36,14 @@
 		<!-- iCheck -->
 		<link href="<?php echo $this->webroot;?>app/webroot/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
+		<!-- bootstrap-wysiwyg -->
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+		<!-- Select2 -->
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+		<!-- Switchery -->
+		<link href="<?php echo $this->webroot;?>app/webroot/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+
+
 		<!-- Datatables -->
 		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
@@ -75,7 +83,8 @@
 				<div class="right_col" role="main">
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>	
-				<?php echo $this->element('sql_dump'); ?>		
+
+				<?php //echo $this->element('sql_dump'); ?>	
 				</div>
 				<!-- /page content -->   			
 
@@ -94,13 +103,22 @@
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/fastclick/lib/fastclick.js"></script>
 		<!-- NProgress -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/nprogress/nprogress.js"></script>
-		<!-- Custom Theme Scripts -->
-		<script src="<?php echo $this->webroot;?>app/webroot/build/js/custom.min.js"></script>
+
+    <!-- bootstrap-progressbar -->
+    <script src="<?php echo $this->webroot;?>app/webroot/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 
 		<!-- iCheck -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/iCheck/icheck.min.js"></script>
 		<!-- Parsley -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/parsleyjs/dist/parsley.min.js"></script>
+
+    <!-- Switchery -->
+    <script src="<?php echo $this->webroot;?>app/webroot/vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="<?php echo $this->webroot;?>app/webroot/vendors/select2/dist/js/select2.full.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="<?php echo $this->webroot;?>app/webroot/build/js/custom.min.js"></script>
 
 		<!-- Datatables -->
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -120,71 +138,24 @@
 		<script src="<?php echo $this->webroot;?>app/webroot/vendors/pdfmake/build/vfs_fonts.js"></script>
 
 		<!-- Datatables -->
-		<script>
-		$(document).ready(function() {
-			var handleDataTableButtons = function() {
-			if ($("#datatable-buttons").length) {
-			$("#datatable-buttons").DataTable({
-			dom: "Bfrtip",
-			buttons: [
-				{
-				extend: "copy",
-				className: "btn-sm"
-				},
-				{
-				extend: "csv",
-				className: "btn-sm"
-				},
-				{
-				extend: "excel",
-				className: "btn-sm"
-				},
-				{
-				extend: "pdfHtml5",
-				className: "btn-sm"
-				},
-				{
-				extend: "print",
-				className: "btn-sm"
-				},
-			],
-			responsive: true
-			});
-			}
-			};
-		
-			TableManageButtons = function() {
-			"use strict";
-			return {
-			init: function() {
-			handleDataTableButtons();
-			}
-			};
-			}();
-		
-			$('#datatable').dataTable();
-			$('#datatable-keytable').DataTable({
-			keys: true
-			});
-		
-			$('#datatable-responsive').DataTable();
-		
-			$('#datatable-scroller').DataTable({
-			ajax: "js/datatables/json/scroller-demo.json",
-			deferRender: true,
-			scrollY: 380,
-			scrollCollapse: true,
-			scroller: true
-			});
-		
-			var table = $('#datatable-fixed-header').DataTable({
-			fixedHeader: true
-			});
-		
-			TableManageButtons.init();
-		});
-		</script>
+    <?php echo $this->Html->script('/app/webroot/vendors/js/datatables.js'); ?>
 		<!-- /Datatables -->
+
+    <!-- Select2 -->
+    <script>
+      $(document).ready(function() {
+        $(".select2_single").select2({
+          placeholder: "Select a state",
+          allowClear: true
+        });
+        $(".select2_group").select2({});
+        $(".select2_multiple").select2({
+          placeholder: "Sélectionner...",
+          allowClear: true
+        });
+      });
+    </script>
+    <!-- /Select2 -->
 
 	</body>
 </html>

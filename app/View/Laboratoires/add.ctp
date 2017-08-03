@@ -31,8 +31,8 @@
 						</div>
 						<div class="form-group">	
 							<?php echo $this->Form->label('Delegue', 'Délégué', array('class' => 'control-label col-md-3 col-sm-3 col-xs-12')); ?>
-							<?php echo $this->Form->input('Delegue', array('label' => false, 'class' => 'form-control col-md-7 col-xs-12', 
-								'div' => array('class' => 'col-md-6 col-sm-6 col-xs-12'))); ?>	
+							<?php echo $this->Form->input('Delegue', array('label' => false, 'class' => 'form-control select2_multiple col-md-7 col-xs-12', 
+								'multiple' => 'multiple', 'placeholder' => 'machin', 'div' => array('class' => 'col-md-6 col-sm-6 col-xs-12'))); ?>
 						</div>
 						<div class="ln_solid"></div>
 						<div class="form-group">
