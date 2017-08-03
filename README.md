@@ -7,6 +7,9 @@ Import the file import_database.sql to have the initial database.
 
 Configure your database in app/Config/database.php.
 
+CakePHP
+----------------
+
 [![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
 
 CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
@@ -42,4 +45,3 @@ Get Support!
 
 [![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
 
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
