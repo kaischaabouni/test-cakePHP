@@ -1,5 +1,11 @@
-CakePHP
+Delegues
 =======
+
+Delegues is a web app for local business administration serving as a test case for the framework CakePHP.
+
+Import the file import_database.sql to have the initial database.
+
+Configure your database in app/Config/database.php.
 
 [![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
 
